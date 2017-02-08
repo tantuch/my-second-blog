@@ -5,7 +5,15 @@
         <body>
             <div>
                 <h1><a href="">Django Girls Blog</a></h1>
-				{{ posts }}
+				{% if posts %}
+					<ul>
+					{% for post in posts %}
+						{{post}}
+					{% endfor %}
+					</ul>
+				{% else %}
+					<p>No polls are available.</p>
+				{% endif %}
             </div>
         </body>
     </html>
