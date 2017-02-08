@@ -5,9 +5,9 @@
         <body>
             <div>
                 <h1><a href="">Django Girls Blog</a></h1>
-				{% if posts %}
+				{% if posts_all %}
 					<ul>
-					{% for post in posts %}
+					{% for post in posts_all %}
 						{{post}}
 					{% endfor %}
 					</ul>
