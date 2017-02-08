@@ -5,14 +5,14 @@
         <body>
             <div>
                 <h1><a href="">Django Girls Blog</a></h1>
-				{% if posts %}
+				{% if posts.count > 0 %}
 					<ul>
 					{% for post in posts %}
 						{{post}}
 					{% endfor %}
 					</ul>
 				{% else %}
-					<p>No polls are available.</p>
+					<p>No blog are available.</p>
 				{% endif %}
             </div>
         </body>
