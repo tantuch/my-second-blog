@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 from django.template import loader
 from .models import Post
+from django.utils import timezone
 
 def post_list(request):
-    posts = Post.objects.all()
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     template = loader.get_template('blog/post_list.html')
     context = {
         'posts': posts,

@@ -4,20 +4,15 @@
         </head>
         <body>
             <div>
-                <h1><a href="">Django Girls Blog</a></h1>
-				{{posts}}
-				{% if posts %}
-					<ul>
-					    {% for post in posts %}
-							{{ post }}
-						{% endfor %}
-					</ul>
-				{% else %}
-					<p>No blog is available!!</p>
-					{% for post in posts_all %}
-						{{post}}
-					{% endfor %}
-				{% endif %}
-            </div>
+                <h1><a href="">Tans Blog</a></h1>
+			</div>
+
+			{% for post in posts %}
+				<div>
+					<h1><a href="">{{ post.title }}</a></h1>
+					<p>{{ post.text|linebreaksbr }}</p>
+					<p>published: {{ post.published_date }}</p>
+				</div>
+			{% endfor %}
         </body>
     </html>
