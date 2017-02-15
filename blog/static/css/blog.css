@@ -1,0 +1,58 @@
+h1 a {
+	font-family: 'Lobster';
+}
+
+.page-header {
+	background-color: #669999;
+	margin-top: 0;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #4d2600;
+    font-size: 90pt;
+    text-align: center;
+}
+
+.header{
+	background-image: url("https://pixabay.com/get/ed36b70b20fc1c22d9584518a33219c8b66ae3d111b6104791f6c17c/keyboard-instrument-436488_1920.jpg");
+}
+.content {
+	margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    float: right right;
+    color: #ff9966;
+	font-size: 15px;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #009999;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 80px;
+	color: #ffdd99;
+	font-family: 'Arial', sans-serif;
+	font-size: 28px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #ffe6cc;
+	font-size: 60px;
+}
