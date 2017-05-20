@@ -14,7 +14,11 @@ h1 a {
 }
 
 .header{
-	background-image: url("https://pixabay.com/get/ed36b70b20fc1c22d9584518a33219c8b66ae3d111b6104791f6c17c/keyboard-instrument-436488_1920.jpg");
+	background-image: url("keyboard-instrument.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	
 }
 .content {
 	margin-left: 40px;
@@ -50,6 +54,7 @@ h1, h2, h3, h4 {
 	color: #ffdd99;
 	font-family: 'Arial', sans-serif;
 	font-size: 28px;
+	background-position: center;
 }
 
 .post h1 a, .post h1 a:visited {
